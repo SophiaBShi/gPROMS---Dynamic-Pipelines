@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gMB:GpromsProject xmlns:gMB="http://www.psenterprise.com/gMB" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.psenterprise.com/gMB http://www.psenterprise.com/gPJ.xsd" version="18" gMB_Version="2023.2.1" Product_Version="2023.2.1" Product_Name="gPROMS Process (Academic Research)" gMB_Build="55306">
+  <Properties>
+    <BooleanProperty name="LibraryProject">false</BooleanProperty>
+    <BooleanProperty name="GrainTimestamps">true</BooleanProperty>
+    <BooleanProperty name="DisplayEmptyGroups">false</BooleanProperty>
+    <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+    <DateProperty name="ModifiedDate">2026-02-17T20:44:51Z</DateProperty>
+  </Properties>
+  <ImageCache>
+    <Image res="defaultModelIcon"/>
+  </ImageCache>
+  <ModelReferenceCache>
+    <ModelReference model="cepci_index" icon="-199773695">
+    </ModelReference>
+    <ModelReference model="cost_pipe_active" icon="-199773695">
+    </ModelReference>
+    <ModelReference model="financial_2022" icon="-199773695">
+    </ModelReference>
+    <ModelReference model="node_passive" icon="-199773695">
+    </ModelReference>
+    <ModelReference model="pipe_active_setp" icon="-199773695">
+    </ModelReference>
+    <ModelReference model="pipe_passive" icon="-199773695">
+    </ModelReference>
+    <ModelReference model="recip_compressor_setp" icon="-199773695">
+    </ModelReference>
+  </ModelReferenceCache>
+  <Group name="Variable Types">
+    <VariableTypeEntity name="anytype" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">Michael Baldea</StringProperty>
+        <DateProperty name="ModifiedDate">2024-05-03T20:46:38Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.0</DefaultValue>
+      <MinValue>-1.0E30</MinValue>
+      <MaxValue>1.0E30</MaxValue>
+      <UomRef name="no_unit"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Cost" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2024-10-01T22:06:07Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E20</MaxValue>
+      <Units>$</Units>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Cost_Annualized" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2024-10-02T21:47:56Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E20</MaxValue>
+      <Units>$/year</Units>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Cost_Daily" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2024-12-04T23:18:04Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E10</MaxValue>
+      <Units>$/day</Units>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Cost_Levelized" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2024-10-01T22:05:38Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E10</MaxValue>
+      <Units>$/kg</Units>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Cost_Levelized_PerDistance" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-13T21:49:37Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E30</MaxValue>
+      <Units>$/ton-100mile</Units>
+      <Delta value="on"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Density" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">Sophia Shi</StringProperty>
+        <DateProperty name="ModifiedDate">2024-09-22T22:53:53Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>4.0</DefaultValue>
+      <MinValue>0.1</MinValue>
+      <MaxValue>100.0</MaxValue>
+      <UomRef name="kilogram_per_cubic_metre"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Diameter" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2024-11-05T20:33:26Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>1.0E-10</MinValue>
+      <MaxValue>100.0</MaxValue>
+      <UomRef name="no_unit"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Energy" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2024-11-18T20:02:48Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>100.0</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E10</MaxValue>
+      <UomRef name="kilowatt_hour"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Friction_Factor" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:51:31Z</DateProperty>
+        <StringProperty name="ModifiedBy">Sophia Shi</StringProperty>
+        <DateProperty name="ModifiedDate">2023-07-11T20:55:13Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.01</DefaultValue>
+      <MinValue>0.001</MinValue>
+      <MaxValue>5.0</MaxValue>
+      <UomRef name="no_unit"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Mass" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2025-01-14T19:55:58Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>0.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E30</MaxValue>
+      <UomRef name="kilogram"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Mass_Flow" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-13T21:47:51Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>38.5</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>100000.0</MaxValue>
+      <UomRef name="kilogram_per_second"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Mass_Flux" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2025-02-04T16:28:59Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>10000.0</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>200000.0</MaxValue>
+      <UomRef name="kilogram_per_square_metre_second"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Power" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2024-12-05T21:00:25Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>1.0E8</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>1.0E15</MaxValue>
+      <UomRef name="watt"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Pressure" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-13T21:47:41Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>40.0</DefaultValue>
+      <MinValue>20.0</MinValue>
+      <MaxValue>120.0</MaxValue>
+      <UomRef name="bar"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Temperature" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">Sophia Shi</StringProperty>
+        <DateProperty name="ModifiedDate">2023-12-04T15:41:37Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>293.15</DefaultValue>
+      <MinValue>200.0</MinValue>
+      <MaxValue>500.0</MaxValue>
+      <UomRef name="kelvin"/>
+    </VariableTypeEntity>
+    <VariableTypeEntity name="Velocity" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-13T21:47:06Z</DateProperty>
+        <StringProperty name="ModifiedBy">Sophia Shi</StringProperty>
+        <DateProperty name="ModifiedDate">2023-09-12T21:01:13Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scen1_20250513_102533_control_Q_2</StringProperty>
+      </Properties>
+      <DefaultValue>60.0</DefaultValue>
+      <MinValue>0.0</MinValue>
+      <MaxValue>10000.0</MaxValue>
+      <UomRef name="metre_per_second"/>
+    </VariableTypeEntity>
+  </Group>
+  <Group name="Models">
+    <ModelEntity name="CEPCI_index" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:38:21Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T17:24:24Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[# Index Model to convert dollar values considering depreciation
+
+PARAMETER
+reference_year_list         AS ORDERED_SET
+CEPCI                       AS ARRAY(reference_year_list)       OF REAL 
+
+SET
+reference_year_list := [
+#'1990',
+#'1991',
+#'1992',
+#'1993',
+#'1994',
+#'1995',
+#'1996',
+#'1997',
+#'1998',
+#'1999',
+#'2000',
+#'2001',
+#'2002',
+#'2003',
+#'2004',
+#'2005',
+'2006',
+'2007',
+'2008',
+'2009',
+'2010',
+'2011',
+'2012',
+'2013',
+'2014',
+'2015',
+'2016',
+'2017',
+'2018',
+'2019',
+#'2020',
+#'2021',
+'2022',
+'2023'];
+
+CEPCI('2006') := 499.6 ;
+CEPCI('2007') := 525.4 ;
+CEPCI('2008') := 575.4 ;
+CEPCI('2009') := 521.9 ;
+CEPCI('2010') := 550.8 ;
+CEPCI('2011') := 585.7 ;
+CEPCI('2012') := 584.6 ;
+CEPCI('2013') := 567.3 ;
+CEPCI('2014') := 576.1 ;
+CEPCI('2015') := 556.8 ;
+CEPCI('2016') := 541.7 ;
+CEPCI('2017') := 572.8 ;
+CEPCI('2018') := 572.8 ;
+CEPCI('2019') := 619.2 ;
+CEPCI('2022') := 817.4 ;
+CEPCI('2023') := 797.9 ;
+
+]]></Body>
+    </ModelEntity>
+    <ModelEntity name="cost_pipe_active" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:38:21Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T20:02:42Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <Unit version="5" name="ap" model="pipe_active_setP" layer="Layer 1" zorder="-5" icon="-199773695">
+        <Transform ScaleX="64.0" ScaleY="64.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="0.0"/>
+        <Labels version="1">
+          <Label LabelClass="name" Identifier="ap">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="68.0"/>
+          </Label>
+          <Label LabelClass="type" Identifier="pipe_active_setP">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="83.0"/>
+          </Label>
+        </Labels>
+      </Unit>
+      <Unit version="5" name="to2022" model="Financial_2022" layer="Layer 1" zorder="-3" icon="-199773695">
+        <Transform ScaleX="64.0" ScaleY="64.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="0.0"/>
+        <Labels version="1">
+          <Label LabelClass="name" Identifier="to2022">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="68.0"/>
+          </Label>
+          <Label LabelClass="type" Identifier="Financial_2022">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="83.0"/>
+          </Label>
+        </Labels>
+      </Unit>
+      <PlotNode PlotLabel="Compressor" XAxisLabel="Time" YAxisLabel="bar" Y2AxisLabel="" showY2Axis="false" legend="true" symbols="false" layer="Layer 1" zorder="-2">
+        <Transform ScaleX="404.0" ScaleY="282.0" ShearX="0.0" ShearY="0.0" TranslateX="66.0" TranslateY="4.0"/>
+        <Variable path="ap.compr.P_disc" label="discharge" axis="y"/>
+        <Variable path="ap.compr.P_suc" label="suction" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="Rated Power" XAxisLabel="Time" YAxisLabel="W" Y2AxisLabel="Stages" showY2Axis="true" legend="true" symbols="false" layer="Layer 1" zorder="-2">
+        <Transform ScaleX="404.0" ScaleY="282.0" ShearX="0.0" ShearY="0.0" TranslateX="472.0" TranslateY="3.0"/>
+        <Variable path="ap.compr.Power_actual" label="Power" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="Flow in Pipe" XAxisLabel="Time" YAxisLabel="kg/s" Y2AxisLabel="" showY2Axis="false" legend="false" symbols="false" layer="Layer 1" zorder="-3">
+        <Transform ScaleX="404.0" ScaleY="257.0" ShearX="0.0" ShearY="0.0" TranslateX="472.0" TranslateY="289.0"/>
+        <Variable path="ap.pipe.flow" label="" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="Pressure in Pipe" XAxisLabel="Time" YAxisLabel="bar" Y2AxisLabel="" showY2Axis="false" legend="false" symbols="false" layer="Layer 1" zorder="-3">
+        <Transform ScaleX="404.0" ScaleY="257.0" ShearX="0.0" ShearY="0.0" TranslateX="65.99999999999999" TranslateY="289.0"/>
+        <Variable path="ap.pipe.p" label="" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="Energy Consump[tion" XAxisLabel="Time" YAxisLabel="Wh" Y2AxisLabel="" showY2Axis="false" legend="false" symbols="false" layer="Layer 1" zorder="-2">
+        <Transform ScaleX="404.0" ScaleY="282.0" ShearX="0.0" ShearY="0.0" TranslateX="877.0" TranslateY="2.0"/>
+        <Variable path="energy_consumption" label="energy" axis="y"/>
+      </PlotNode>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[# Cost Model
+
+PARAMETER
+# -- for a large reciprocating compressor --
+c_lifetime                  AS INTEGER
+installation_factor         AS REAL  
+
+# -- for a pipeline segment --
+p_lifetime                  AS INTEGER  
+
+# -- shared parameters --
+discount_rate               AS REAL             
+labor_rate                  AS REAL 
+
+
+UNIT
+to2022                      AS Financial_2022
+ap                          AS pipe_active_setP
+
+
+VARIABLE
+base_flow                   AS Mass_FLow  # designed nominal flow
+
+# -- costs for a compressor station --
+c_CAPEX                     AS Cost # total capital investment
+c_TIC                       AS Cost # total instlled costs
+c_UC                        AS Cost # uninstalled cost
+c_indirect_cost AS Cost
+# --
+c_direct_labor              AS Cost_Daily
+c_labor_daily_hours         AS anytype
+c_indirect_labor            AS Cost_Daily
+c_FOM                       AS Cost_Daily
+c_NE_OPEX                   AS Cost_Daily
+# --
+c_daily_CAPEX               AS Cost_Daily
+c_daily_TIC                 AS Cost_Daily 
+c_CRF                       AS anytype # capital recovery factor
+# -- electricty
+energy_consumption          AS Energy
+
+# -- costs for a pipeline segment --
+p_CAPEX                     AS Cost   # total capital investment
+p_TIC                       AS Cost   # total installed costs
+p_indirect_cost             AS Cost
+p_material                  AS Cost
+p_cap_labor                 AS Cost
+p_misc                      AS Cost
+p_ROW                       AS Cost # right-of-way costs
+# --
+p_OPEX                      AS Cost_Daily
+p_direct_labor              AS Cost_Daily
+p_labor_daily_hours         AS anytype
+p_indirect_labor            AS Cost_Daily
+p_FOM                       AS Cost_Daily # fixed O&M costs
+# --
+p_daily_CAPEX               AS Cost_Daily
+p_daily_TIC                 AS Cost_daily
+p_CRF                       AS anytype  # capital recovery factor
+
+
+SET
+# -- for a large reciprocating compressor --
+c_lifetime := 15 ;     # years
+installation_factor := 2 ; # for high flow and moderate compression, IF = the labor or parts required to install compressor
+
+# -- for a pipeline segment --
+p_lifetime := 30 ;     # years
+
+# -- shared parameters --
+discount_rate := 0.08 ;   # 8%, weighted average cost of capital (WACC)                
+labor_rate := 31.60 * to2022.inflation_rate_from('2014') ; # 2022$/hour
+
+
+EQUATION
+# -- for a compressor --
+c_CAPEX = c_TIC + c_indirect_cost ;
+c_indirect_cost = (0.05 + 0.10 + 0.10 + 0.03 + 0.12) * c_TIC ;
+c_TIC = c_UC * installation_factor ;
+c_UC = 1962.2 * (ap.compr.num_unit * ap.compr.Power_max)^0.8225 * to2022.inflation_rate_from('2007'); # 2022$
+# --
+c_daily_CAPEX = c_CAPEX * c_CRF / 365 ;
+c_daily_TIC = c_TIC * c_CRF /365 ;
+c_CRF = discount_rate * (discount_rate + 1)^c_lifetime / ((discount_rate+1)^c_lifetime - 1) ;
+# -- 
+# compressor OPEX
+# non-energy (NE), or fixed O&M (FOM)
+c_NE_OPEX = c_direct_labor + c_indirect_labor + c_FOM ;
+c_FOM = (0.01 + 0.01 + 0.001) * c_daily_CAPEX + 0.04 * c_daily_TIC + 0.5 * c_direct_labor;
+c_direct_labor = c_labor_daily_hours * labor_rate ;
+c_labor_daily_hours = 288 * (base_flow*24*3600 / 100000)^0.25 / 365 ;
+c_indirect_labor = 0.5 * c_direct_labor ;
+# -- 
+$energy_consumption * 3600 = (ap.compr.Power_actual)/1000 ; 
+# electricity cost (energy cost and c_OPEX (VOM) are calculated at the network level
+
+# -- costs for a pipeline segment --
+p_CAPEX = p_TIC + p_indirect_cost ;
+p_indirect_cost = (0.05 + 0.10 + 0.10 + 0.03) * p_TIC ; 
+p_TIC = (p_material + p_cap_labor + p_misc + p_ROW)  * (ap.pipe.L/1609.34) * (ap.pipe.D/0.0254) ; # 2022$
+p_material = 5605 * (ap.pipe.D/0.0254)^0.41642 / (ap.pipe.L/1609.34)^0.06441 * to2022.inflation_rate_from('2019'); # 2022$/mile-inch
+p_cap_labor = 95295 * (ap.pipe.L/1609.34)^0.03070 / (ap.pipe.D/0.0254)^0.53848 * to2022.inflation_rate_from('2019');
+p_misc = 19211 / (ap.pipe.D/0.0254)^0.14178 / (ap.pipe.L/1609.34)^0.04697 * to2022.inflation_rate_from('2019') ;
+p_ROW = 72634 * (ap.pipe.L/1609.34)^0.05284 / (ap.pipe.D/0.0254)^1.07566 * to2022.inflation_rate_from('2019') ;
+# --
+p_daily_CAPEX = p_CAPEX * p_CRF / 365 ;
+p_daily_TIC = p_TIC * p_CRF / 365 ;
+p_CRF = discount_rate * (discount_rate + 1)^p_lifetime / ((discount_rate + 1)^p_lifetime - 1) ;
+# --
+# Fixed OPEX (non-energy)
+p_OPEX = p_direct_labor + p_indirect_labor + p_FOM ;
+p_FOM = (0.01 + 0.01 + 0.001) * p_daily_CAPEX + 0.01 * p_daily_TIC + 0.5 * p_direct_labor ;
+p_direct_labor = p_labor_daily_hours * labor_rate ;
+p_labor_daily_hours = 8320 * (base_flow *3600*24 / 100000)^0.25 / 365; # hours/day
+p_indirect_labor = 0.5 * p_direct_labor ;]]></Body>
+    </ModelEntity>
+    <ModelEntity name="Financial_2022" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:38:21Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T17:25:14Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <Unit version="5" name="CEPCI" model="CEPCI_index" layer="Layer 1" zorder="-1" icon="-199773695">
+        <Transform ScaleX="64.0" ScaleY="64.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="0.0"/>
+        <Labels version="1">
+          <Label LabelClass="name" Identifier="CEPCI">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="68.0"/>
+          </Label>
+          <Label LabelClass="type" Identifier="CEPCI_index">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="83.0"/>
+          </Label>
+        </Labels>
+      </Unit>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[# Convertion Model to convert all dollar values to 2022 dollar value
+
+PARAMETER
+reference_year_list         AS ORDERED_SET
+inflation_rate_from      AS ARRAY(reference_year_list)   OF REAL  
+
+
+UNIT
+CEPCI                       AS CEPCI_index
+
+
+SET
+reference_year_list := [
+#'1990',
+#'1991',
+#'1992',
+#'1993',
+#'1994',
+#'1995',
+#'1996',
+#'1997',
+#'1998',
+#'1999',
+#'2000',
+#'2001',
+#'2002',
+#'2003',
+#'2004',
+#'2005',
+'2006',
+'2007',
+'2008',
+'2009',
+'2010',
+'2011',
+'2012',
+'2013',
+'2014',
+'2015',
+'2016',
+'2017',
+'2018',
+'2019',
+#'2020',
+#'2021',
+'2022'];
+
+inflation_rate_from('2006') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2006') ;
+inflation_rate_from('2007') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2007') ;
+inflation_rate_from('2008') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2008') ;
+inflation_rate_from('2009') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2009') ;
+inflation_rate_from('2010') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2010') ;
+inflation_rate_from('2011') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2011') ;
+inflation_rate_from('2012') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2012') ;
+inflation_rate_from('2013') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2013') ;
+inflation_rate_from('2014') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2014') ;
+inflation_rate_from('2015') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2015') ;
+inflation_rate_from('2016') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2016') ;
+inflation_rate_from('2017') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2017') ;
+inflation_rate_from('2018') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2018') ;
+inflation_rate_from('2019') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2019') ;
+inflation_rate_from('2022') := CEPCI.CEPCI('2022')/CEPCI.CEPCI('2022') ;
+ ]]></Body>
+    </ModelEntity>
+    <ModelEntity name="node_passive" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:38:21Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T17:27:02Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[# Bypass Node Model with customizable # of inlets and outlets
+# Energy and mass balance applied
+
+PARAMETER
+num_inlets      AS INTEGER
+num_outlets     AS INTEGER 
+
+
+VARIABLE
+P_in        AS ARRAY(num_inlets) OF Pressure
+P_out       AS ARRAY(num_outlets) OF Pressure
+Q_in        AS ARRAY(num_inlets) OF Mass_Flow
+Q_out       AS ARRAY(num_outlets) OF Mass_Flow
+
+P_node      AS Pressure
+Q_node      AS Mass_FLow
+
+
+EQUATION 
+# -- Mass balance --
+Q_node = SIGMA(Q_in) ;
+Q_node = SIGMA(Q_out) ;
+
+# -- Energy balance --
+P_node = MIN(P_in()) ;
+P_node = P_out() ;]]></Body>
+    </ModelEntity>
+    <ModelEntity name="pipe_active_setP" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:38:21Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T17:38:41Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <Unit version="5" name="compr" model="recip_compressor_setP" layer="Layer 1" zorder="-1" icon="-199773695">
+        <Transform ScaleX="64.0" ScaleY="64.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="0.0"/>
+        <Labels version="1">
+          <Label LabelClass="name" Identifier="compr">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="68.0"/>
+          </Label>
+          <Label LabelClass="type" Identifier="recip_compressor_setP">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="83.0"/>
+          </Label>
+        </Labels>
+      </Unit>
+      <Unit version="5" name="pipe" model="pipe_passive" layer="Layer 1" zorder="-1" icon="-199773695">
+        <Transform ScaleX="64.0" ScaleY="64.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="0.0"/>
+        <Labels version="1">
+          <Label LabelClass="name" Identifier="pipe">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="68.0"/>
+          </Label>
+          <Label LabelClass="type" Identifier="pipe_passive">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="83.0"/>
+          </Label>
+        </Labels>
+      </Unit>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[# Active Pipe Segment Model combing a compressor with a passive pipe segment
+
+UNIT
+pipe    AS pipe_passive
+compr   AS recip_compressor_setP
+
+
+EQUATION
+compr.Q = pipe.flow(0) ;
+compr.P_disc = pipe.p(0);]]></Body>
+    </ModelEntity>
+    <ModelEntity name="pipe_passive" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:38:21Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T20:05:39Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[# Passive Pipe Segment Model with Euler's PDE
+
+PARAMETER
+# Physical Constants
+R                      AS                          REAL DEFAULT 8.314          # Gas constant (J/mol*K)
+pi                     AS                          REAL DEFAULT 3.14159265359  # Pi
+g                      AS                          REAL DEFAULT 9.81           # Gravitational constant (m/s^2)
+
+# pipe parameters
+roughness              AS                          REAL DEFAULT 0.0000178      # m 
+L                      AS                          REAL                        # m, value is set in Process
+
+# Hydrogen as parameters
+k                      AS                          REAL DEFAULT 1.41           # Cp/Cv, for H2
+molar_weight           AS                          REAL DEFAULT 2.016/1000     # kg/mol
+Z                      AS                          REAL                        # Compresibility facor, set in Process
+viscosity              AS                          REAL DEFAULT 8.7e-6         # kg/m-s          
+SG                     AS                          REAL DEFAULT 0.0696         # specific gravity of gas (density ratio to air)
+
+# discretization
+N_interval              AS                         INTEGER                     # value is set in process
+
+
+DISTRIBUTION_DOMAIN
+# -- Normalize pipe length to 1 --
+axial                  AS [0 : 1]               
+
+
+VARIABLE 
+D       AS                                 Diameter     # m
+area    AS                                 anytype      # m^2
+lambda  AS      Friction_Factor
+T       AS      Temperature                             # K
+a2      AS      anytype                                 # J/kg, or m^2/s^2
+linepack AS     Mass                                    # kg
+p       AS      DISTRIBUTION(axial)     OF Pressure     # bar
+q       AS      DISTRIBUTION(axial)     OF Mass_Flux    # kg/s-m^2
+rho     AS      DISTRIBUTION(axial)     OF Density      # kg/m^3
+v       AS      DISTRIBUTION(axial)     OF Velocity     # m/s
+v_max   AS      DISTRIBUTION(axial)     OF Velocity     # m/s   
+flow    AS      DISTRIBUTION(axial)     OF Mass_Flow    # kg/s
+
+# -- for setting constraints in optimization --
+p_critical      AS Pressure
+error_erosion AS anytype
+error_choke AS anytype
+
+
+SELECTOR
+SystemStatus AS (stst, dynamic_set_pres_in, dynamic_set_flow_in) DEFAULT stst
+
+
+EQUATION 
+# --- General pipeline equations --- 
+area = pi/4 * D^2 ;
+a2      = Z * R * T / molar_weight ;       
+p       = a2 * rho /1e5;                    # (kg/m-s^2 or Pa) TO BAR *by dividing 1e5
+q       = rho * v ;                       
+flow    = q * area ;
+1/SQRT(lambda) = -2*LOG10(roughness/(3.71*D)) ;
+linepack = area * INTEGRAL(x:=0:1 ; rho(x)) * L ;
+
+# -- for setting up constraints in optimization --
+# Erosional velocity:
+v_max = 100 * SQRT(0.5131 * Z * R * T /(SG * (p*100))) ; # 1 bar = 100 kPa
+$error_erosion = SIGMA( (MAX(0, v(0:1)-v_max(0:1))/100)^2 ) ;
+
+# Chocked condition: 
+p_critical = p(0) * (2/(k+1))^(k/(k-1)) ;
+$error_choke = ( MIN(0, p(1)-p_critical)/30 )^2 ;
+
+# -- PDE cases --
+CASE SystemStatus OF 
+    WHEN stst:
+        FOR x := 0|+ TO 1 DO
+            (1/L) * PARTIAL(q(x),axial) = 0 ; 
+            (1/L) * PARTIAL(P(x)*1e5, axial)  = - lambda/(2*D*rho(x)) *q(x) * ABS(q(x))  ;
+        END # for
+
+    WHEN dynamic_set_pres_in:
+        FOR x := 0|+ TO 1 DO
+            $rho(x) +  (1/L) * PARTIAL(q(x),axial) = 0 ; 
+        END # for
+
+        FOR x := 0 TO 1|- DO
+            $q(x) +  (1/L) * PARTIAL(P(x)*1e5, axial)  = - lambda/(2*D*rho(x)) *q(x) * ABS(q(x))  ;
+        END # for
+
+    WHEN dynamic_set_flow_in:
+        FOR x := 0 TO 1|- DO
+            $rho(x) +  (1/L) * PARTIAL(q(x),axial) = 0 ; 
+        END # for
+
+        FOR x := 0|+ TO 1 DO
+            $q(x) +  (1/L) * PARTIAL(P(x)*1e5, axial)  = - lambda/(2*D*rho(x)) *q(x) * ABS(q(x))  ;
+        END # for
+END # case
+
+
+INITIAL
+error_erosion = 0 ;
+error_choke = 0 ;
+    ]]></Body>
+    </ModelEntity>
+    <ModelEntity name="recip_compressor_setP" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:38:21Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T17:49:08Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[# Reciprocating Compressor Model with Pressure Settings
+
+PARAMETER
+# -- Constants --
+R               AS  REAL    DEFAULT     8.314       # J/mol-K
+k               AS  REAL    DEFAULT     1.406       #Cp = 14.31 kJ/kg-K, Cv = 10.18 kJ/kg-K @ room temp and standard pressure for hydrogen; for NG, Cp=2.25, Cv=1.73
+MW              AS  REAL    DEFAULT     2.016e-3    # kg/mol
+  
+
+# -- Compressor Parameters --
+eta_isen        AS  REAL                            # isentropic efficiency
+eta_motor       AS  REAL                            # motor efficiency
+Power_max       AS  REAL DEFAULT 560                # kW
+
+# -- for first-order filter --
+tau_p           AS REAL DEFAULT 60                  # s
+
+
+VARIABLE
+Z               AS  anytype
+Q               AS  Mass_Flow                       # kg/s
+P_suc, P_disc   AS  Pressure                        # bar
+T_suc           AS  anytype                         # K
+Power_multi, Power_actual   AS Power                # W
+
+# -- for constraints in optimization
+compr_ratio                 AS anytype
+error_compr_ratio           AS anytype
+
+# -- compressor station design --
+num_unit        AS anytype  # number of total compressors in the compressor station, value is set in process
+
+# -- for first-order filter --
+P_sp            AS  Pressure
+err_p           AS  anytype
+
+
+SET
+eta_isen := 0.8 ;
+eta_motor := 0.95 ;
+
+
+EQUATION
+IF compr_ratio < 1.001 THEN # no compression needed
+    Power_multi = 0 ;
+ELSE 
+    Power_multi = (k/(k-1)) * (Z/eta_isen) * T_suc * (Q/MW) * R * ((P_disc/P_suc)^((k-1)/k) - 1 ) ;
+END # if
+
+# -- Rated compressor power --
+Power_actual = Power_multi/eta_motor ;
+
+# -- for setting up constraints in optimization
+# Compression ratio:
+compr_ratio = P_disc/P_suc ;
+$error_compr_ratio = ( MAX(0, 1-compr_ratio, compr_ratio-5)/3.1 )^2 ;
+
+# -- first-oder filter for pressure changes --
+err_p = P_sp - P_disc;
+$P_disc = 1/tau_p * err_p ;
+
+
+INITIAL
+error_compr_ratio = 0 ;]]></Body>
+    </ModelEntity>
+    <ModelEntity name="scenario1" version="8" UnitNameShown="true" UnitModelShown="false" AutoRouteConnections="true">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:38:21Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T20:19:52Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">topology</StringProperty>
+        <StringProperty name="DefaultCaseTab">reports</StringProperty>
+        <BooleanProperty name="DisplayedInPalette">false</BooleanProperty>
+        <BooleanProperty name="RecycleBreaker">false</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Icon>-199773695</Icon>
+      <FlowsheetLayers DefaultLayer="Layer 1">
+        <Layer name="Layer 1" visible="true" printed="true"/>
+      </FlowsheetLayers>
+      <Unit version="5" name="pipe1" model="cost_pipe_active" layer="Layer 1" zorder="-13" icon="-199773695">
+        <Transform ScaleX="64.0" ScaleY="64.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="0.0"/>
+        <Labels version="1">
+          <Label LabelClass="name" Identifier="pipe1">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="68.0"/>
+          </Label>
+          <Label LabelClass="type" Identifier="cost_pipe_active">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="83.0"/>
+          </Label>
+        </Labels>
+      </Unit>
+      <Unit version="5" name="pipe2" model="cost_pipe_active" layer="Layer 1" zorder="-13" icon="-199773695">
+        <Transform ScaleX="64.0" ScaleY="64.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="0.0"/>
+        <Labels version="1">
+          <Label LabelClass="name" Identifier="pipe2">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="68.0"/>
+          </Label>
+          <Label LabelClass="type" Identifier="cost_pipe_active">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="0.0" TranslateY="83.0"/>
+          </Label>
+        </Labels>
+      </Unit>
+      <Unit version="5" name="split_node" model="node_passive" layer="Layer 1" zorder="-3" icon="-199773695">
+        <Transform ScaleX="64.0" ScaleY="64.0" ShearX="0.0" ShearY="0.0" TranslateX="11.0" TranslateY="94.0"/>
+        <Labels version="1">
+          <Label LabelClass="name" Identifier="split_node">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="11.0" TranslateY="162.0"/>
+          </Label>
+          <Label LabelClass="type" Identifier="node_passive">
+            <Transform ScaleX="1.0" ScaleY="1.0" ShearX="0.0" ShearY="0.0" TranslateX="11.0" TranslateY="177.0"/>
+          </Label>
+        </Labels>
+      </Unit>
+      <PlotNode PlotLabel="" XAxisLabel="Time" YAxisLabel="pressure" Y2AxisLabel="" showY2Axis="false" legend="false" symbols="false" layer="Layer 1" zorder="-6">
+        <Transform ScaleX="431.0" ScaleY="261.0" ShearX="0.0" ShearY="0.0" TranslateX="92.0" TranslateY="5.0"/>
+        <Variable path="pipe1.ap.compr.P_disc" label="Compressor 1" axis="y"/>
+        <Variable path="pipe2.ap.compr.P_disc" label="Compressor 2" axis="y"/>
+        <Variable path="pipe1.ap.compr.P_sp" label="C1 SP" axis="y"/>
+        <Variable path="pipe2.ap.compr.P_sp" label="C2 SP" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="" XAxisLabel="Time" YAxisLabel="Flow" Y2AxisLabel="" showY2Axis="false" legend="true" symbols="false" layer="Layer 1" zorder="-7">
+        <Transform ScaleX="431.0" ScaleY="273.0" ShearX="0.0" ShearY="0.0" TranslateX="91.00000000000001" TranslateY="272.0"/>
+        <Variable path="pipe1.ap.pipe.flow(0)" label="Pipe 1 inlet" axis="y"/>
+        <Variable path="pipe1.ap.pipe.flow(1)" label="Pipe 1 outlet" axis="y"/>
+        <Variable path="pipe2.ap.pipe.flow(0)" label="Pipe 2 inlet" axis="y"/>
+        <Variable path="pipe2.ap.pipe.flow(1)" label="Pipe 2 outlet" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="" XAxisLabel="Time" YAxisLabel="Pipe Deliver" Y2AxisLabel="" showY2Axis="false" legend="true" symbols="false" layer="Layer 1" zorder="-8">
+        <Transform ScaleX="437.0" ScaleY="261.0" ShearX="0.0" ShearY="0.0" TranslateX="530.0" TranslateY="6.0"/>
+        <Variable path="split_node.P_node" label="To users 2, 3, 4" axis="y"/>
+        <Variable path="pipe2.ap.pipe.p(1)" label="To user 1" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="" XAxisLabel="Time" YAxisLabel="Power" Y2AxisLabel="" showY2Axis="false" legend="true" symbols="false" layer="Layer 1" zorder="-9">
+        <Transform ScaleX="435.99999999999994" ScaleY="239.0" ShearX="0.0" ShearY="0.0" TranslateX="86.09711684370242" TranslateY="559.3596358118366"/>
+        <Variable path="pipe1.ap.compr.Power_actual" label="Compressor 1" axis="y"/>
+        <Variable path="pipe2.ap.compr.Power_actual" label="Compressor 2" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="" XAxisLabel="Time" YAxisLabel="Pressure Overshoot" Y2AxisLabel="" showY2Axis="false" legend="true" symbols="false" layer="Layer 1" zorder="-10">
+        <Transform ScaleX="432.0" ScaleY="269.0" ShearX="0.0" ShearY="0.0" TranslateX="533.9210925644918" TranslateY="276.5493171471927"/>
+        <Variable path="diff_P" label="" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="" XAxisLabel="Time" YAxisLabel="Linepack" Y2AxisLabel="" showY2Axis="false" legend="true" symbols="false" layer="Layer 1" zorder="-10">
+        <Transform ScaleX="433.0" ScaleY="242.0" ShearX="0.0" ShearY="0.0" TranslateX="533.0" TranslateY="554.0"/>
+        <Variable path="pipe1.ap.pipe.linepack" label="pipe1" axis="y"/>
+        <Variable path="pipe2.ap.pipe.linepack" label="pipe2" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="" XAxisLabel="Time" YAxisLabel="compressor ratio" Y2AxisLabel="" showY2Axis="false" legend="false" symbols="false" layer="Layer 1" zorder="-11">
+        <Transform ScaleX="326.0" ScaleY="262.0" ShearX="0.0" ShearY="0.0" TranslateX="977.0" TranslateY="6.0"/>
+        <Variable path="pipe1.ap.compr.compr_ratio" label="Compressor 1" axis="y"/>
+        <Variable path="pipe2.ap.compr.compr_ratio" label="Compressor 2" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="" XAxisLabel="" YAxisLabel="nw daily cost" Y2AxisLabel="" showY2Axis="false" legend="false" symbols="false" layer="Layer 1" zorder="-12">
+        <Transform ScaleX="329.0" ScaleY="267.0" ShearX="0.0" ShearY="0.0" TranslateX="976.0" TranslateY="278.0"/>
+        <Variable path="daily_cost_nw" label="" axis="y"/>
+      </PlotNode>
+      <PlotNode PlotLabel="" XAxisLabel="Time" YAxisLabel="Energy Consumption" Y2AxisLabel="" showY2Axis="false" legend="true" symbols="false" layer="Layer 1" zorder="-11">
+        <Transform ScaleX="327.0" ScaleY="244.0" ShearX="0.0" ShearY="0.0" TranslateX="978.9661023121897" TranslateY="553.4915073684635"/>
+        <Variable path="pipe1.energy_consumption" label="Compressor 1" axis="y"/>
+        <Variable path="pipe2.energy_consumption" label="Compressor 2" axis="y"/>
+      </PlotNode>
+      <UMS><![CDATA[]]></UMS>
+      <Body><![CDATA[# Scenario Model builds the topology and initial setting for scenario 1, and calls the demand profiles
+
+PARAMETER
+no_steps            AS INTEGER
+FREQ                AS REAL
+
+P_user              AS ARRAY(2) OF REAL 
+price_electricity   AS REAL DEFAULT 0.1 # $2022/kWh
+
+demand_data         AS FOREIGN_OBJECT 
+
+
+UNIT
+pipe1               AS cost_pipe_active
+split_node          AS node_passive
+pipe2               AS cost_pipe_active
+
+
+VARIABLE
+mytime  AS anytype
+STEPS1  AS ARRAY(no_steps) OF anytype
+STEPS2  AS ARRAY(no_steps) OF anytype
+STEPS3  AS ARRAY(no_steps) OF anytype
+STEPS4  AS ARRAY(no_steps) OF anytype
+UP1     AS ARRAY(no_steps) OF anytype
+UP2     AS ARRAY(no_steps) OF anytype
+UP3     AS ARRAY(no_steps) OF anytype
+UP4     AS ARRAY(no_steps) OF anytype
+DOWN1   AS ARRAY(no_steps) OF anytype
+DOWN2   AS ARRAY(no_steps) OF anytype
+DOWN3   AS ARRAY(no_steps) OF anytype
+DOWN4   AS ARRAY(no_steps) OF anytype
+demand1_interval AS Mass_Flow
+demand2_interval AS Mass_Flow
+demand3_interval AS Mass_Flow
+demand4_interval AS Mass_Flow
+
+# objective options
+LCOH_nw         AS Cost_Levelized
+LCOH_mile       AS Cost_Levelized
+LCOH_p          AS Cost_Levelized
+LCOH_c          AS Cost_Levelized
+
+# -- to set up end-user pressure constraint --
+diff_P          AS ARRAY(2) OF anytype
+error_p_user    AS anytype
+
+# -- to set up end-user flowrate constraint --
+diff_flow       AS ARRAY(4) OF anytype
+error_flow_user AS anytype
+
+# --to set up end-point linepack constraint --
+end_lp          AS ARRAY(2) OF Mass
+diff_lp         AS ARRAY(2) OF anytype
+
+# -- total flow --
+total_daily_demand      AS anytype
+total_daily_demand_mile AS anytype
+daily_cost_nw           AS Cost_Daily
+
+# -- Costs --
+electricity_cost        AS anytype
+energy                  AS Energy
+OPEX_c                  AS anytype
+
+# -- objective functions --
+obj_energy              AS anytype
+obj_LCOH                AS anytype
+obj_LCOH_mile           AS anytype
+
+
+SET
+no_steps := 24 ;    # demand s each hour for 24 hours
+FREQ := 3600 ;      # each hour has 3600 seconds
+
+WITHIN split_node DO
+    num_inlets := 1 ;
+    num_outlets := 4 ;
+END # within
+
+P_user(1:2) := 40 ; # User 3 and 4 have the same pressure requirements at user 2
+
+
+EQUATION
+# -- Topology connections --
+# pipe 1 into the node
+pipe1.ap.pipe.P(1) = split_node.P_in(1) ;
+pipe1.ap.pipe.flow(1) = split_node.Q_in(1) ;
+
+# the node into pipe 2's compressor
+split_node.P_out(1) = pipe2.ap.compr.P_suc ;
+split_node.Q_out(1) = pipe2.ap.compr.Q ;
+
+# -- for end-user pressure constraint --
+diff_P(1) = pipe2.ap.pipe.P(1) - P_user(1);
+diff_P(2) = split_node.P_node - P_user(2);
+$error_p_user = SIGMA( (MAX(0,0-diff_p(1:2))/30)^2 ) ;
+
+# -- for end-user demand constraint --
+diff_flow(1) = pipe2.ap.pipe.flow(1) - demand1_interval ;
+diff_flow(2) = split_node.Q_out(2) - demand2_interval ;
+diff_flow(3) = split_node.Q_out(3) - demand3_interval ;
+diff_flow(4) = split_node.Q_out(4) - demand4_interval ;
+$error_flow_user = SIGMA( (MAX(0 ,0-diff_flow)/100)^2 ) ;
+
+# -- for end-point linepack constraint --
+diff_lp(1) = (pipe1.ap.pipe.linepack - end_lp(1))/1e6 ;
+diff_lp(2) = (pipe2.ap.pipe.linepack - end_lp(2))/1e6 ;
+
+# -- total flow --
+$total_daily_demand = SIGMA(demand1_interval, demand2_interval, demand3_interval, demand4_interval) ;
+$total_daily_demand_mile = (pipe1.ap.pipe.L+pipe2.ap.pipe.L)/1609.43 * demand1_interval
+                          +(pipe1.ap.pipe.L)/1609.43 * SIGMA(demand2_interval, demand3_interval, demand4_interval) ;
+
+# -- Costs --
+energy = SIGMA(pipe1.energy_consumption, pipe2.energy_consumption) ;
+electricity_cost  = energy * price_electricity ;
+OPEX_c = electricity_cost + SIGMA(pipe1.c_NE_OPEX, pipe2.c_NE_OPEX);
+
+LCOH_p * (total_daily_demand) = SIGMA((pipe1.p_daily_CAPEX + pipe1.p_OPEX), (pipe2.p_daily_CAPEX + pipe2.p_OPEX));
+LCOH_c * (total_daily_demand) = SIGMA(pipe1.c_daily_CAPEX, pipe2.c_daily_CAPEX, OPEX_c);
+
+daily_cost_nw = SIGMA(OPEX_c, 
+                pipe1.c_daily_CAPEX,
+                pipe1.p_daily_CAPEX, pipe1.p_OPEX,
+                pipe2.c_daily_CAPEX,
+                pipe2.p_daily_CAPEX, pipe2.p_OPEX) ;
+LCOH_nw * total_daily_demand  = daily_cost_nw * 1000;  # $/ton
+LCOH_mile * total_daily_demand_mile = daily_cost_nw * 1000 * 100 ; # $/ton per 100 miles
+
+# -- Objective funcitons --
+obj_energy = energy / 1e5 ;
+obj_LCOH = LCOH_nw ; 
+obj_LCOH_mile = LCOH_mile + error_p_user * 10 + error_flow_user * 10 ; 
+
+#--- run foreign object---------------------------------------------------------------------------------------------------------------
+# -- let mytime = TIME --
+$mytime = 1 ;
+
+# END-USER 1 DEMAND SCHEDULE/PROFILE REPRESENTED IN GRANULARITY OF SECONDS 
+
+FOR j:= 1 TO no_steps DO
+   STEPS1(j) = (demand_data.demand1(j * FREQ) - demand_data.demand1((j-1) * FREQ));
+END
+
+FOR j:= 1 TO no_steps DO
+   UP1(j) =   + 1/2 * (1 + sgn(Mytime - ((j-1)*2 + j*FREQ))) * 1/2 * STEPS1(j) * (Mytime - ((j-1)*2 + j*FREQ));
+   DOWN1(j) = - 1/2 * (1 + sgn(Mytime - (j*2 + j*FREQ))) * 1/2 * STEPS1(j) * (Mytime - (j*2 + j*FREQ));
+END
+
+demand1_interval = demand_data.demand1(1) + SIGMA(UP1() + DOWN1()) ; 
+
+# END-USER 2 DEMAND SCHEDULE/PROFILE REPRESENTED IN GRANULARITY OF SECONDS 
+
+FOR j:= 1 TO no_steps DO
+   STEPS2(j) = (demand_data.demand2(j * FREQ) - demand_data.demand2((j-1) * FREQ));
+END
+
+FOR j:= 1 TO no_steps DO
+   UP2(j) =   + 1/2 * (1 + sgn(Mytime - ((j-1)*2 + j*FREQ))) * 1/2 * STEPS2(j) * (Mytime - ((j-1)*2 + j*FREQ));
+   DOWN2(j) = - 1/2 * (1 + sgn(Mytime - (j*2 + j*FREQ))) * 1/2 * STEPS2(j) * (Mytime - (j*2 + j*FREQ));
+END
+
+demand2_interval = demand_data.demand2(1) + SIGMA(UP2() + DOWN2()) ; 
+
+# END-USER 3 DEMAND SCHEDULE/PROFILE REPRESENTED IN GRANULARITY OF SECONDS 
+
+FOR j:= 1 TO no_steps DO
+   STEPS3(j) = (demand_data.demand3(j * FREQ) - demand_data.demand3((j-1) * FREQ));
+END
+
+FOR j:= 1 TO no_steps DO
+   UP3(j) =   + 1/2 * (1 + sgn(Mytime - ((j-1)*2 + j*FREQ))) * 1/2 * STEPS3(j) * (Mytime - ((j-1)*2 + j*FREQ));
+   DOWN3(j) = - 1/2 * (1 + sgn(Mytime - (j*2 + j*FREQ))) * 1/2 * STEPS3(j) * (Mytime - (j*2 + j*FREQ));
+END
+
+demand3_interval = demand_data.demand3(1) + SIGMA(UP3() + DOWN3()) ; 
+
+# END-USER 4 DEMAND SCHEDULE/PROFILE REPRESENTED IN GRANULARITY OF SECONDS 
+
+FOR j:= 1 TO no_steps DO
+   STEPS4(j) = (demand_data.demand4(j * FREQ) - demand_data.demand4((j-1) * FREQ));
+END
+
+FOR j:= 1 TO no_steps DO
+   UP4(j) =   + 1/2 * (1 + sgn(Mytime - ((j-1)*2 + j*FREQ))) * 1/2 * STEPS4(j) * (Mytime - ((j-1)*2 + j*FREQ));
+   DOWN4(j) = - 1/2 * (1 + sgn(Mytime - (j*2 + j*FREQ))) * 1/2 * STEPS4(j) * (Mytime - (j*2 + j*FREQ));
+END
+
+demand4_interval = demand_data.demand4(1) + SIGMA(UP4() + DOWN4()) ; 
+#--- run foreign object---------------------------------------------------------------------------------------------------------------
+
+
+INITIAL
+mytime = 0 ;
+
+pipe1.energy_consumption = 0 ;
+pipe2.energy_consumption = 0 ;
+
+error_p_user = 0 ;
+error_flow_user = 0 ;]]></Body>
+    </ModelEntity>
+  </Group>
+  <Group name="Processes">
+    <ProcessEntity name="simulate_scenario1_setP" version="1">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:43:55Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T20:33:01Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="SimulationExecutionDirectory"></StringProperty>
+        <BooleanProperty name="IncludeUnitSpecifications">true</BooleanProperty>
+        <BooleanProperty name="IncludeInitialisationProcedure">true</BooleanProperty>
+      </Properties>
+      <Body><![CDATA[# Scenario Process simulates scenario 1 with the called demand profile and defined compressor operations
+
+UNIT
+nw AS scenario1
+
+
+MONITOR # variables of interest
+# for the whole system
+nw.LCOH_nw ;
+nw.LCOH_mile ;
+nw.energy ;
+nw.daily_cost_nw ;
+
+# for compressors
+nw.LCOH_c
+nw.pipe*.ap.compr.P_sp ;
+nw.pipe*.ap.compr.P_disc ;
+nw.pipe*.ap.compr.Q ;
+nw.pipe*.ap.compr.compr_ratio ;
+nw.pipe*.ap.compr.Power_actual ;
+nw.pipe*.energy_consumption ;
+
+# for pipeline segments
+nw.LCOH_p
+nw.pipe*.ap.pipe.linepack ;
+nw.pipe*.ap.pipe.p ;
+nw.pipe*.ap.pipe.flow ;
+nw.pipe*.ap.pipe.rho ;
+
+# for all node
+nw.split*.P_node; # delibery to users 2, 3, 4
+
+# if want all variables
+# nw.* ;
+
+
+SET
+WITHIN nw DO 
+    # Linearly interpolate the hourly demand profile
+    demand_data := "Linear1DInterpolantFO::scenario1_demands.input" ;
+   
+    WITHIN pipe1.ap DO 
+        WITHIN pipe DO 
+            L               := 321869 ; # m, 200 miles
+            Z               := 1.031 ; #1.02 ; # @ T and P
+            N_interval      := 3 ;
+
+            # -- distribution domain --
+            axial := [CFDM, 2, N_interval] ;
+        END # within pipe
+    END # within ap
+
+    WITHIN pipe2.ap DO 
+        WITHIN pipe DO
+            L               := 112654 ; # m, 70 miles
+            Z               := 1.031 ; #1.02 ; # @ T and P
+            N_interval      := 3 ;
+
+            # -- distribution domain --
+            axial := [CFDM, 2, N_interval] ;
+        END # within pipe
+    END # within ap
+END # within nw
+
+
+ASSIGN
+WITHIN nw DO 
+    # -- minimum linepack to be preserved --
+    end_lp(1) := 1095000 ;
+    end_lp(2) := 188000 ;
+
+    # -- meet all demands --
+    diff_flow := 0 ;
+
+    WITHIN pipe1 DO 
+        base_flow := 34.88899543 ;
+        WITHIN ap.pipe DO
+            T := 288.15 ;
+            D := 40 * 0.0254 ; # in to m
+        END # within pipe
+
+        WITHIN ap.compr DO
+            num_unit := 222;
+            T_suc := 288.15 ;
+            P_suc := 20 ; 
+            P_sp:= 70 ; 
+            Z := 1.024; 
+        END # within compr
+    END # within ap
+
+    WITHIN pipe2 DO 
+        base_flow := 27.87 ;
+        WITHIN ap.pipe DO
+            T := 288.15 ;
+            D := 30 * 0.0254 ; # in to m
+        END # within pipe
+
+        WITHIN ap.compr DO
+            num_unit := 26 ;
+            T_suc := 288.15 ;
+            P_sp := 70 ; 
+            Z := 1.024; 
+        END # within compr
+    END # within ap
+END # within nw
+
+
+INITIALSELECTOR
+WITHIN nw DO 
+    pipe1.ap.pipe.SystemStatus := pipe1.ap.pipe.dynamic_set_pres_in ;
+    pipe2.ap.pipe.SystemStatus := pipe2.ap.pipe.dynamic_set_pres_in ;
+END # within
+
+
+INITIAL
+# -- steady state --
+WITHIN nw DO 
+    WITHIN pipe1 DO
+        $(ap.compr.P_disc) = 0 ;
+        $(ap.pipe.rho(0|+:1)) = 0 ;
+        $(ap.pipe.q(0:1|-)) = 0 ;
+    END # pipe1
+
+    WITHIN pipe2 DO
+        $(ap.compr.P_disc) = 0 ;
+        $(ap.pipe.rho(0|+:1)) = 0 ;
+        $(ap.pipe.q(0:1|-)) = 0 ;
+    END # pipe2
+END # nw
+
+# -- establised flow at steady state
+nw.total_daily_demand = 34.88899543;
+nw.total_daily_demand_mile = (nw.pipe1.ap.pipe.L+nw.pipe2.ap.pipe.L)/1609.43 * 27.87
+                          +(nw.pipe1.ap.pipe.L)/1609.43 * (34.88899543-27.87) ;
+
+
+
+SOLUTIONPARAMETERS
+    DASolver := "DAEBDF" [
+        "AbsoluteTolerance" := 1.0E-6
+    ]
+    DOSolver := "CVP_SS" [
+        "MINLPSolver" := "NLPSQP" [
+            "HessianHandler" := "ApproximateHessian" [
+                "ReuseHessian" := TRUE
+            ],
+            "OptimisationTolerance" := 0.005,
+            "OutputLevel" := 3
+        ],
+        "OutputLevel" := 3
+    ]
+    IgnoreDAEIndexAnalysis := ON
+    IndexReduction := ON
+    SequentialInitialisationProcedure := ON
+    #OverrideEvaluationRecovery := FALSE 
+
+
+SCHEDULE
+CONTINUE FOR 86400
+]]></Body>
+    </ProcessEntity>
+  </Group>
+  <Group name="Optimisations">
+    <OptimisationEntity name="PDO_scenario1" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:52:52Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T20:44:38Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <StringProperty name="DefaultTab">general</StringProperty>
+      </Properties>
+      <Body><![CDATA[PROCESS simulate_scenario1_setP
+
+OPTIMISATION_TYPE
+DYNAMIC
+
+HORIZON
+86400.0 [1.0 : 86400.0]
+
+INTERVALS
+24
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+
+PIECEWISE_CONSTANT
+nw.pipe1.ap.compr.P_sp [bar]
+INITIAL_PROFILE
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+65.0 : 20.0 : 100.0
+65.0 : 20.0 : 100.0
+65.0 : 20.0 : 100.0
+65.0 : 20.0 : 100.0
+65.0 : 20.0 : 100.0
+65.0 : 20.0 : 100.0
+65.0 : 20.0 : 100.0
+64.0 : 20.0 : 100.0
+63.0 : 20.0 : 100.0
+62.0 : 20.0 : 100.0
+61.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+CHANGE_BOUNDS
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+-1.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+
+
+PIECEWISE_CONSTANT
+nw.pipe2.ap.compr.P_sp [bar]
+INITIAL_PROFILE
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+60.0 : 20.0 : 100.0
+CHANGE_BOUNDS
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+0.0 : 1.0E300
+
+
+ENDPOINT_INEQUALITY
+nw.diff_lp(1)
+0.0 : 0.05
+
+ENDPOINT_INEQUALITY
+nw.diff_lp(2)
+0.0 : 0.01
+
+ENDPOINT_INEQUALITY
+nw.error_p_user
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe1.ap.compr.error_compr_ratio
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe1.ap.pipe.error_choke
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe1.ap.pipe.error_erosion
+0.0 : 0.001
+
+#ENDPOINT_INEQUALITY
+#nw.pipe1.ap.pipe.linepack
+#1095800.0 : 1100000.0
+
+ENDPOINT_INEQUALITY
+nw.pipe2.ap.compr.error_compr_ratio
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe2.ap.pipe.error_choke
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe2.ap.pipe.error_erosion
+0.0 : 0.001
+
+#ENDPOINT_INEQUALITY
+#nw.pipe2.ap.pipe.linepack
+#188200.0 : 189000.0
+
+MINIMISE
+nw.obj_LCOH_mile
+]]></Body>
+    </OptimisationEntity>
+    <OptimisationEntity name="PTI_scenario1" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T01:00:46Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2026-02-17T20:44:51Z</DateProperty>
+        <StringProperty name="OriginalProject">V5_OPT_scenarios</StringProperty>
+        <StringProperty name="DefaultTab">general</StringProperty>
+      </Properties>
+      <Body><![CDATA[PROCESS simulate_scenario1_setP
+
+OPTIMISATION_TYPE
+DYNAMIC
+
+HORIZON
+86400.0 [1.0 : 86400.0]
+
+INTERVALS
+24
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+3600.0 : 3600.0 : 3600.0
+
+TIME_INVARIANT
+nw.pipe1.ap.compr.P_sp [bar]
+INITIAL_VALUE
+70.0 : 20.0 : 100.0
+
+TIME_INVARIANT
+nw.pipe2.ap.compr.P_sp [bar]
+INITIAL_VALUE
+70.0 : 20.0 : 100.0
+
+ENDPOINT_INEQUALITY
+nw.error_p_user
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe1.ap.compr.error_compr_ratio
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe1.ap.pipe.error_choke
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe1.ap.pipe.error_erosion
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe2.ap.compr.error_compr_ratio
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe2.ap.pipe.error_choke
+0.0 : 0.001
+
+ENDPOINT_INEQUALITY
+nw.pipe2.ap.pipe.error_erosion
+0.0 : 0.001
+
+MINIMISE
+nw.LCOH_mile
+]]></Body>
+    </OptimisationEntity>
+  </Group>
+  <Group name="Miscellaneous Files">
+    <MiscFileEntity name="scenario1_demands.input" version="2">
+      <Properties>
+        <StringProperty name="CreatedBy">sbs3348</StringProperty>
+        <DateProperty name="CreatedDate">2026-02-17T00:44:32Z</DateProperty>
+        <StringProperty name="ModifiedBy">sbs3348</StringProperty>
+        <DateProperty name="ModifiedDate">2025-03-07T01:42:10Z</DateProperty>
+        <StringProperty name="OriginalProject">OPT_scenario1_dynamic_control_20251009_133210_rerun_penalty_2</StringProperty>
+        <BooleanProperty name="Win32LineSeparation">true</BooleanProperty>
+      </Properties>
+      <Body><![CDATA[
+# Input file for the 1D Linear Interpolation Foreign Object.
+# Representing demand profiles from end users.
+
+# 4 parameters, space delimited:  NameOfIndependentVariable1 xmin xmax nx 
+mytime  0.0  86400  24
+
+# number of dependent variables (N), followed by the names of each 
+# dependent variables (N in total, one name per line).
+4
+demand1
+demand2
+demand3
+demand4
+
+# Data. Space separated list of N values of the dependent variables on a grid point. I.e.: 
+#   o There are nx+1 lines of this type in total 
+#   o The lines (i.e. grid points) are ordered so that y varies faster than x 
+
+# Each row contains data for variables in the following order:
+# demand1 demand2 deamnd3 demand4
+27.87037037	0.01	6.341958397	0.666666667
+27.87037037	0.01	6.341958397	0.666666667
+28.04347826	0.01	6.341958397	0.533333333
+28.21658615	0.01	6.341958397	0.366666667
+28.38969404	0.01	6.341958397	0.333333333
+28.56280193	0.01	6.341958397	0.316666667
+28.73590982	0.01	6.341958397	0.4
+28.90901771	0.01	6.341958397	0.583333333
+29.0821256	11.815	6.341958397	0.833333333
+29.25523349	23.63	6.341958397	1.2
+29.42834138	23.63	6.341958397	1.633333333
+29.60144928	23.63	6.341958397	2
+29.77455717	23.63	6.341958397	2.233333333
+29.94766506	11.815	6.341958397	2.333333333
+30.12077295	0.01	6.341958397	2.5
+30.29388084	0.01	6.341958397	2.633333333
+30.46698873	0.01	6.341958397	2.716666667
+30.64009662	0.01	6.341958397	2.833333333
+30.81320451	0.01	6.341958397	2.85
+30.9863124	0.01	6.341958397	2.7
+31.15942029	0.01	6.341958397	2.5
+31.33252818	0.01	6.341958397	2.083333333
+31.50563607	0.01	6.341958397	1.666666667
+31.67874396	0.01	6.341958397	1.333333333
+31.85185185	0.01	6.341958397	1.016666667
+
+
+
+
+
+
+
+
+]]></Body>
+    </MiscFileEntity>
+  </Group>
+</gMB:GpromsProject>
