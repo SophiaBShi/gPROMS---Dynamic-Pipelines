@@ -14,16 +14,16 @@ PTI — Pressure Time-Invariant: compressor discharge pressure is optimized as a
 PDO — Pressure Dynamic Optimization: compressor discharge pressure is optimized at each time interval
 FDO — Flow Dynamic Optimization: compressor flowrate is optimized at each time interval
 
-├── variable types/
-│   ├── variable                  # lower/upper bounds, units, default values
-│   └── ... ...  
-│
-├── connection types/
-│   └── Gas_Flow                  # mass flowrate and pressure
+├── variable types/ \\
+│   ├── variable                  # lower/upper bounds, units, default values  \\
+│   └── ... ...   \\
+│ \\
+├── connection types/ \\
+│   └── Gas_Flow                  # mass flowrate and pressure \\
 │
 ├── models/
-│   ├── CEPCI_index               # Convert dollar values considering depreciation
-│   ├── Financial_2022            # Convert all dollar values to 2022 dollar value
+│   ├── CEPCI_index               # Convert dollar values considering depreciation \\
+│   ├── Financial_2022            # Convert all dollar values to 2022 dollar value \\
 │   ├── node_passive              # Splitting/merging node 
 │   ├── recip_compressor          # Reciprocating Compressor Model with Flowrate Settings
 │   ├── pipe_passive              # Passive Pipe Segment Model with Euler's PDE
