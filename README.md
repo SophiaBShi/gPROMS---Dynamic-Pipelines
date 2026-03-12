@@ -1,4 +1,3 @@
-Dynamic Optimization for Hydrogen Pipeline Network Operations
 This repository contains the gPROMS model code accompanying the paper:
 
 Dynamic Optimization for Hydrogen Pipeline Network Operations
