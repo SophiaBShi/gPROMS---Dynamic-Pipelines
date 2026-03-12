@@ -1,10 +1,13 @@
 This repository contains the gPROMS model code accompanying the paper:
 
 Dynamic Optimization for Hydrogen Pipeline Network Operations
+
 Sophia B. Shi, Brian A. Korgel, Michael Baldea
 
 
-Overview
+
+**Overview**
+
 This code implements a dynamic optimization framework that couples isothermal Euler gas-flow partial differential equations (PDEs) with compressor control and techno-economic analysis for pure-hydrogen pipelines.
 
 Three operational strategies are available:
@@ -16,55 +19,55 @@ PDO — Pressure Dynamic Optimization: compressor discharge pressure is optimize
 FDO — Flow Dynamic Optimization: compressor flowrate is optimized at each time interval
 
 
-Project Structure:
+**Project Structure:**
 
-├── variable types/
+Variable types/
 
-│   ├── variable                  # lower/upper bounds, units, default values
+├── variable                  # lower/upper bounds, units, default values
 
-│   └── ... ...
-
-
-├── connection types/
-
-│   └── Gas_Flow                  # mass flowrate and pressure
+└── ... ...
 
 
-├── models/
+Connection types/
 
-│   ├── CEPCI_index               # Convert dollar values considering depreciation
+└── Gas_Flow                  # mass flowrate and pressure
 
-│   ├── Financial_2022            # Convert all dollar values to 2022 dollar value
+Models/
 
-│   ├── node_passive              # Splitting/merging node 
+├── CEPCI_index               # Convert dollar values considering depreciation
 
-│   ├── recip_compressor          # Reciprocating Compressor Model with Flowrate Settings
+├── Financial_2022            # Convert all dollar values to 2022 dollar value
 
-│   ├── pipe_passive              # Passive Pipe Segment Model with Euler's PDE
+├── node_passive              # Splitting/merging node 
 
-│   ├── pipe_active_setF          # Active Pipe Segment Model combining a compressor with a passive pipe segment
+├── recip_compressor          # Reciprocating Compressor Model with Flowrate Settings
 
-│   ├── cost_pipe_active          # Cost Model
+├── pipe_passive              # Passive Pipe Segment Model with Euler's PDE
 
-│   └── scenario#                 # Scenario Model builds the topology and initial setting, and calls the demand profiles
+├── pipe_active_setF          # Active Pipe Segment Model combining a compressor with a passive pipe segment
 
+├── cost_pipe_active          # Cost Model
 
-├── processes/
-
-│   ├── simulate_scenario#_setP   # Simulation with fixed discharge pressure
-
-│   └── simulate_scenario#_setF   # Simulation with fixed flowrate
+└── scenario#                 # Scenario Model builds the topology and initial setting, and calls the demand profiles
 
 
-├── optimisation/
+Processes/
 
-│   ├── PTI_scenario#             # Pressure time-invariant optimization
+├── simulate_scenario#_setP   # Simulation with fixed discharge pressure
 
-│   ├── PDO_scenario#             # Pressure dynamic optimization
-
-│   └── FDO_scenario#             # Flow dynamic optimization
+└── simulate_scenario#_setF   # Simulation with fixed flowrate
 
 
-└── miscellaneous/
+Optimisation/
 
-    └── demand_profile            # User-defined demand profile input (Before running any simulation or optimization, specify the time-varying demand for each user)
+├── PTI_scenario#             # Pressure time-invariant optimization
+
+├── PDO_scenario#             # Pressure dynamic optimization
+
+└── FDO_scenario#             # Flow dynamic optimization
+
+
+Miscellaneous/
+
+└── demand_profile            # User-defined demand profile input (Before running any simulation or optimization, specify the time-varying demand for each user)
+    
