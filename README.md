@@ -2,9 +2,7 @@ This repository contains the gPROMS model code accompanying the paper:
 
 Dynamic Optimization for Hydrogen Pipeline Network Operations
 Sophia B. Shi, Brian A. Korgel, Michael Baldea
-McKetta Department of Chemical Engineering, The University of Texas at Austin
-Texas Materials Institute, The University of Texas at Austin
-Oden Institute for Computational Engineering and Sciences, The University of Texas at Austin
+
 
 Overview
 This code implements a dynamic optimization framework that couples isothermal Euler gas-flow partial differential equations (PDEs) with compressor control and techno-economic analysis for pure-hydrogen pipelines.
@@ -12,10 +10,13 @@ This code implements a dynamic optimization framework that couples isothermal Eu
 Three operational strategies are available:
 
 PTI — Pressure Time-Invariant: compressor discharge pressure is optimized as a single constant value over the time horizon
+
 PDO — Pressure Dynamic Optimization: compressor discharge pressure is optimized at each time interval
+
 FDO — Flow Dynamic Optimization: compressor flowrate is optimized at each time interval
 
-project_root/
+
+Project Structure:
 
 ├── variable types/
 
