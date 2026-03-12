@@ -16,12 +16,19 @@ PDO — Pressure Dynamic Optimization: compressor discharge pressure is optimize
 FDO — Flow Dynamic Optimization: compressor flowrate is optimized at each time interval
 
 project_root/
+
 ├── variable types/
+
 │   ├── variable                  # lower/upper bounds, units, default values
-│   └── ... ...  
+
+│   └── ... ...
+
 │
+
 ├── connection types/
+
 │   └── Gas_Flow                  # mass flowrate and pressure
+
 │
 ├── models/
 │   ├── CEPCI_index               # Convert dollar values considering depreciation
